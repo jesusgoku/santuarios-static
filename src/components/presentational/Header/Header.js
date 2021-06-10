@@ -20,16 +20,34 @@ function Header() {
             <Nav.Link>Inicio</Nav.Link>
           </Link>
 
-          <Link href="/mision-vision" passHref>
+          {/* <Link href="/mision-vision" passHref>
             <Nav.Link>Acerca De</Nav.Link>
-          </Link>
+          </Link> */}
+
+          <NavDropdown title="Acerca De" id="basic-nav-dropdown">
+            <Link href="/acerca-de/santuarios-altura" passHref>
+              <NavDropdown.Item>Santuarios de Altura</NavDropdown.Item>
+            </Link>
+
+            <Link href="/acerca-de/mision-vision" passHref>
+              <NavDropdown.Item>Misión y Visión</NavDropdown.Item>
+            </Link>
+
+            <Link href="/acerca-de/principios" passHref>
+              <NavDropdown.Item>Principios</NavDropdown.Item>
+            </Link>
+
+            <Link href="/acerca-de/forma-trabajo" passHref>
+              <NavDropdown.Item>Forma de Trabajo</NavDropdown.Item>
+            </Link>
+          </NavDropdown>
 
           <NavDropdown title="Iniciativas" id="basic-nav-dropdown">
-            <Link href="/iniciativa/caps" passHref>
+            <Link href="/iniciativas/caps" passHref>
               <NavDropdown.Item>CAPS</NavDropdown.Item>
             </Link>
 
-            <Link href="/iniciativa/apus" passHref>
+            <Link href="/iniciativas/apus" passHref>
               <NavDropdown.Item>Apus Tutelares</NavDropdown.Item>
             </Link>
 
