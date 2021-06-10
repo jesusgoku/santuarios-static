@@ -1,63 +1,12 @@
 import Head from 'next/head';
-
 import MainLayout from '@app/components/layouts/Main';
 
-function AboutUs() {
+function WayOfWork() {
   return (
     <MainLayout>
       <Head>
-        <title>Misión y Visión - Santuarios de Altura</title>
+        <title>Nuestra Forma de Trabajar - Santuarios de Altura</title>
       </Head>
-
-      <h1>Santuarios de Altura</h1>
-      <p>
-        Somos una comunidad autofinanciada, sin fines de lucro, conformada por
-        voluntarios de diversas formaciones. Valoramos y respetamos la
-        diversidad de las personas, combinamos el deporte con el rescate de la
-        Cultura Andina y el amor a las montañas y la naturaleza.
-      </p>
-      <p>
-        Buscamos practicar Ayni (Reciprocidad) y hacer Ayllu (Comunidad), como
-        parte de nuestro caminar y acercamiento a la Cultura Andina.
-      </p>
-
-      <h2>Misión y Visión</h2>
-      <p>
-        Filosofía (Misión): En comunidad (ayllu) a partir de la reciprocidad
-        (ayni) ofrendamos, educamos, limpiamos, reconocemos, valoramos,
-        difundimos y conservamos los Santuarios de Altura.
-      </p>
-      <p>
-        Nuestro caminar (Visión): Construir comunidad, en el marco de la
-        filosofía andina, a partir de la generación de un despertar de la
-        conciencia, que ponga al centro la valoración de la diversidad ocupando
-        como herramientas cada una de las iniciativas.
-      </p>
-
-      <h2>Principios</h2>
-
-      <ul>
-        <li>
-          Potenciar el valor de la diversidad y de la diferencia en el marco de
-          cada iniciativa.
-        </li>
-        <li>
-          No persigue fines de lucro, ni reconocimientos personales y/o
-          grupales.
-        </li>
-        <li>
-          Estimular la conciencia ambiental en el marco de la cultura andina.
-        </li>
-        <li>
-          Desarrollar y favorecer procesos de enseñanza-aprendizaje para la vida
-          de carácter recíproco.
-        </li>
-        <li>
-          Fortalecer las cualidades de cada uno de los y las participantes de la
-          iniciativa desde una relación horizontal y basada en la confianza.
-        </li>
-        <li>Revindicar valores y saberes de la cultura andina.</li>
-      </ul>
 
       <h2>Nuestra Forma de Trabajar</h2>
 
@@ -221,4 +170,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default WayOfWork;

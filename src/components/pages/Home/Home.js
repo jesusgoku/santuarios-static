@@ -28,7 +28,7 @@ export default function Home() {
         </p>
       </div>
 
-      <p>Bienvenidos a Santuarios de Altura</p>
+      <h2>Bienvenidos a Santuarios de Altura</h2>
       <p>
         Nuestros caminar es construir comunidad con el marco de la filosofía
         andina, a partir de la generación de un despertar de la conciencia que
@@ -36,26 +36,40 @@ export default function Home() {
         herramientas cada una de las iniciativas.
       </p>
 
-      <p>iniciativas</p>
+      <h2>Iniciativas</h2>
 
-      <p>CAPS</p>
-      <p>
-        Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
-        iniciativa que busca capacitar y promocionar prácticas de conservación.
-      </p>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <img src="/logo-caps.png" className="img-fluid" />
+            <h3>CAPS</h3>
+            <p>
+              Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
+              iniciativa que busca capacitar y promocionar prácticas de
+              conservación.
+            </p>
+          </div>
 
-      <p>Apus Tutelares</p>
-      <p>
-        Apus Tutelares es un Proyecto de la comunidad Santuarios de Altura, que
-        busca contribuir a la revaloración del patrimonio material asociado a
-        los Apus Tutelares (cerros y montañas).
-      </p>
+          <div className="col">
+            <img src="/logo-apus.png" className="img-fluid" />
+            <h3>Apus Tutelares</h3>
+            <p>
+              Apus Tutelares es un Proyecto de la comunidad Santuarios de
+              Altura, que busca contribuir a la revaloración del patrimonio
+              material asociado a los Apus Tutelares (cerros y montañas).
+            </p>
+          </div>
 
-      <p>MAC</p>
-      {/* TODO: add description to MAC */}
-      <p>Montañismo a los colegios</p>
+          <div className="col">
+            <img src="/logo-mac.png" className="img-fluid" />
+            <h3>MAC</h3>
+            {/* TODO: add description to MAC */}
+            <p>Montañismo a los colegios</p>
+          </div>
+        </div>
+      </div>
 
-      <p>Filosofía</p>
+      <h2>Filosofía</h2>
       <p>
         En comunidad (ayllu) a partir de la reciprocidad (ayni) ofrendamos,
         educamos, limpiamos, reconocemos, valoramos, difundimos y conservamos
@@ -63,7 +77,7 @@ export default function Home() {
       </p>
 
       <Link href="/mision-vision">
-        <a class="btn btn-primary">Ver más</a>
+        <a className="btn btn-primary">Ver más</a>
       </Link>
     </MainLayout>
   );
