@@ -1,5 +1,4 @@
-import '../styles/globals.css';
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '@app/styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

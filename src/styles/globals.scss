@@ -1,0 +1,28 @@
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  background-image: url(/background-xs.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+@include media-breakpoint-up(md) {
+  body {
+    background-image: url(/background-sm.jpg);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  body {
+    background-image: url(/background-md.jpg);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  body {
+    background-image: url(/background-lg.jpg);
+  }
+}
