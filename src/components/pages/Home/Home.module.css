@@ -1,17 +1,13 @@
 .Home__Header {
   text-align: center;
-  padding: 100px 100px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  color: white;
   font-family: serif;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .Home__HeaderTitle {
-  font-size: 5em;
+  font-size: 5rem;
 }
 
 .Home__HeaderDescription {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }

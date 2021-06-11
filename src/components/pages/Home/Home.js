@@ -40,8 +40,13 @@ export default function Home() {
 
       <div className="container">
         <div className="row">
-          <div className="col">
-            <img src="/logo-caps.png" className="img-fluid" />
+          <div className="col-md">
+            <Image
+              src="/logo-caps.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
             <h3>CAPS</h3>
             <p>
               Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
@@ -50,8 +55,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="col">
-            <img src="/logo-apus.png" className="img-fluid" />
+          <div className="col-md">
+            <Image
+              src="/logo-apus.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
             <h3>Apus Tutelares</h3>
             <p>
               Apus Tutelares es un Proyecto de la comunidad Santuarios de
@@ -60,8 +70,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="col">
-            <img src="/logo-mac.png" className="img-fluid" />
+          <div className="col-md">
+            <Image
+              src="/logo-mac.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
             <h3>MAC</h3>
             {/* TODO: add description to MAC */}
             <p>Montañismo a los colegios</p>
