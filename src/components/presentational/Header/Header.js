@@ -45,12 +45,19 @@ function Header() {
             </NavDropdown>
 
             <NavDropdown title="Iniciativas" id="basic-nav-dropdown">
-              <Link href="/iniciativas/caps" passHref>
-                <NavDropdown.Item>CAPS</NavDropdown.Item>
+              <NavDropdown.Header>CAPS</NavDropdown.Header>
+              <Link href="/iniciativas/caps/que-es" passHref>
+                <NavDropdown.Item>¿Qué es CAPS?</NavDropdown.Item>
+              </Link>
+              <Link href="/iniciativas/caps/preguntas-frecuentes" passHref>
+                <NavDropdown.Item>Preguntas Frecuentes</NavDropdown.Item>
               </Link>
 
-              <Link href="/iniciativas/apus" passHref>
-                <NavDropdown.Item>Apus Tutelares</NavDropdown.Item>
+              <NavDropdown.Divider></NavDropdown.Divider>
+
+              <NavDropdown.Header>Apus Tutelares</NavDropdown.Header>
+              <Link href="/iniciativas/apus/que-es" passHref>
+                <NavDropdown.Item>¿Qué es Apus Tutelares?</NavDropdown.Item>
               </Link>
 
               {/* <Link href="/iniciativa/mac" passHref>
