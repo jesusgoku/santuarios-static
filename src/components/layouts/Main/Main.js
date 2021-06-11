@@ -7,7 +7,7 @@ import styles from './Main.module.css';
 
 function MainLayout({ children }) {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Santuarios de Altura</title>
         <meta name="description" content="Santuarios de Altura" />
@@ -15,9 +15,25 @@ function MainLayout({ children }) {
       </Head>
 
       <Header></Header>
-      <main className={styles.Main}>{children}</main>
-      <Footer></Footer>
-    </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col"></div>
+        </div>
+
+        <div className={`row ${styles.Main__Row}`}>
+          <div className="col">
+            <main className={styles.Main}>{children}</main>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col">
+            <Footer></Footer>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
