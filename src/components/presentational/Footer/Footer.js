@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './Footer.module.css';
 
@@ -9,23 +9,26 @@ function Footer() {
         <h3>Contacto</h3>
         <ul className="list-unstyled">
           <li>
-            Santuarios de Altura:{' '}
+            <FontAwesomeIcon icon="envelope" listItem /> Santuarios de Altura:{' '}
             <a href="mailto:santuariosdealtura@gmail.com">
               santuariosdealtura@gmail.com
             </a>
           </li>
+
           <li>
-            CAPS:{' '}
+            <FontAwesomeIcon icon="envelope" listItem /> CAPS:{' '}
             <a href="mailto:limpiezadelplomo@gmail.com">
               limpiezadelplomo@gmail.com
             </a>
           </li>
+
           <li>
-            Apus Tutelares:{' '}
+            <FontAwesomeIcon icon="envelope" listItem /> Apus Tutelares:{' '}
             <a href="mailto:apustutelares@gmail.com">apustutelares@gmail.com</a>
           </li>
+
           <li>
-            MAC:{' '}
+            <FontAwesomeIcon icon="envelope" listItem /> MAC:{' '}
             <a href="mailto:montanismoaloscolegios@gmail.com">
               montanismoaloscolegios@gmail.com
             </a>

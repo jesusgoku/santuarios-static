@@ -5,8 +5,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 
 import styles from './Header.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header() {
+  const aboutUsTitle = (
+    <>
+      <FontAwesomeIcon icon="info-circle" /> Acerca de
+    </>
+  );
+
+  const initiativesTitle = (
+    <>
+      <FontAwesomeIcon icon="mountain" /> Iniciativas
+    </>
+  );
+
   return (
     <Navbar expand="md" sticky="top" className={styles.Navbar}>
       <Container>
@@ -19,14 +32,16 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto flex-fill justify-content-around text-uppercase">
             <Link href="/" passHref>
-              <Nav.Link>Inicio</Nav.Link>
+              <Nav.Link>
+                <FontAwesomeIcon icon="home" /> Inicio
+              </Nav.Link>
             </Link>
 
             {/* <Link href="/mision-vision" passHref>
             <Nav.Link>Acerca De</Nav.Link>
           </Link> */}
 
-            <NavDropdown title="Acerca De" id="basic-nav-dropdown">
+            <NavDropdown title={aboutUsTitle} id="basic-nav-dropdown">
               <Link href="/acerca-de/santuarios-altura" passHref>
                 <NavDropdown.Item>Santuarios de Altura</NavDropdown.Item>
               </Link>
@@ -44,7 +59,7 @@ function Header() {
               </Link>
             </NavDropdown>
 
-            <NavDropdown title="Iniciativas" id="basic-nav-dropdown">
+            <NavDropdown title={initiativesTitle} id="basic-nav-dropdown">
               <NavDropdown.Header>CAPS</NavDropdown.Header>
               <Link href="/iniciativas/caps/que-es" passHref>
                 <NavDropdown.Item>¿Qué es CAPS?</NavDropdown.Item>
@@ -66,7 +81,9 @@ function Header() {
             </NavDropdown>
 
             <Link href="/contacto" passHref>
-              <Nav.Link>Contacto</Nav.Link>
+              <Nav.Link>
+                <FontAwesomeIcon icon="comment" /> Contacto
+              </Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
