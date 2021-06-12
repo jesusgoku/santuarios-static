@@ -5,6 +5,11 @@ import {
   faComment,
   faMountain,
   faInfoCircle,
+  faSpinner,
+  faThumbsUp,
+  faThumbsDown,
+  faCheck,
+  faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagramSquare,
@@ -23,6 +28,12 @@ library.add(
   faComment,
   faMountain,
   faInfoCircle,
+  faSpinner,
+  faThumbsUp,
+  faThumbsDown,
+  faCheck,
+  faTimes,
+
   faInstagramSquare,
   faFacebookSquare,
   faYoutubeSquare,

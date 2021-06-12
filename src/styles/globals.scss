@@ -1,4 +1,5 @@
 @import 'bootstrap/scss/bootstrap';
+@import '@fortawesome/fontawesome-svg-core/styles.css';
 
 body {
   background-image: url(/background-xs.jpg);
@@ -25,8 +26,4 @@ body {
   body {
     background-image: url(/background-lg.jpg);
   }
-}
-
-.svg-inline--fa {
-  width: 1em;
 }
