@@ -11,31 +11,28 @@ function Footer() {
           <dt>Santuarios de Altura:</dt>
           <dd>
             <a href="mailto:santuariosdealtura@gmail.com">
-              <FontAwesomeIcon icon="envelope" listItem />{' '}
-              santuariosdealtura@gmail.com
+              <FontAwesomeIcon icon="envelope" /> santuariosdealtura@gmail.com
             </a>
           </dd>
 
           <dt>CAPS:</dt>
           <dd>
             <a href="mailto:limpiezadelplomo@gmail.com">
-              <FontAwesomeIcon icon="envelope" listItem />{' '}
-              limpiezadelplomo@gmail.com
+              <FontAwesomeIcon icon="envelope" /> limpiezadelplomo@gmail.com
             </a>
           </dd>
 
           <dt>Apus Tutelares:</dt>
           <dd>
             <a href="mailto:apustutelares@gmail.com">
-              <FontAwesomeIcon icon="envelope" listItem />{' '}
-              apustutelares@gmail.com
+              <FontAwesomeIcon icon="envelope" /> apustutelares@gmail.com
             </a>
           </dd>
 
           <dt>MAC:</dt>
           <dd>
             <a href="mailto:montanismoaloscolegios@gmail.com">
-              <FontAwesomeIcon icon="envelope" listItem />{' '}
+              <FontAwesomeIcon icon="envelope" />{' '}
               montanismoaloscolegios@gmail.com
             </a>
           </dd>
