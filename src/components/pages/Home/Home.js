@@ -28,72 +28,75 @@ export default function Home() {
         </p>
       </div>
 
-      <h2>Bienvenidos a Santuarios de Altura</h2>
-      <p>
-        Nuestros caminar es construir comunidad con el marco de la filosofía
-        andina, a partir de la generación de un despertar de la conciencia que
-        ponga al centro la valoración de la diversidad ocupando como
-        herramientas cada una de las iniciativas.
-      </p>
+      <div className={styles.Home__Intro}>
+        <h2>Bienvenidos a Santuarios de Altura</h2>
+        <p>
+          Nuestros caminar es construir comunidad con el marco de la filosofía
+          andina, a partir de la generación de un despertar de la conciencia que
+          ponga al centro la valoración de la diversidad ocupando como
+          herramientas cada una de las iniciativas.
+        </p>
+      </div>
 
-      <h2>Iniciativas</h2>
+      <div className={styles.Home__Initiatives}>
+        <h2 className={styles.Home__InitiativesTitle}>Iniciativas</h2>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-md">
-            <Image
-              src="/logo-caps.png"
-              layout="responsive"
-              width={100}
-              height={100}
-            ></Image>
-            <h3>CAPS</h3>
-            <p>
-              Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
-              iniciativa que busca capacitar y promocionar prácticas de
-              conservación.
-            </p>
-          </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md">
+              <Image
+                src="/logo-caps.png"
+                layout="responsive"
+                width={100}
+                height={100}
+              ></Image>
+              <h3>CAPS</h3>
+              <p>
+                Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es
+                una iniciativa que busca capacitar y promocionar prácticas de
+                conservación.
+              </p>
+            </div>
 
-          <div className="col-md">
-            <Image
-              src="/logo-apus.png"
-              layout="responsive"
-              width={100}
-              height={100}
-            ></Image>
-            <h3>Apus Tutelares</h3>
-            <p>
-              Apus Tutelares es un Proyecto de la comunidad Santuarios de
-              Altura, que busca contribuir a la revaloración del patrimonio
-              material asociado a los Apus Tutelares (cerros y montañas).
-            </p>
-          </div>
+            <div className="col-md">
+              <Image
+                src="/logo-apus.png"
+                layout="responsive"
+                width={100}
+                height={100}
+              ></Image>
+              <h3>Apus Tutelares</h3>
+              <p>
+                Apus Tutelares es un Proyecto de la comunidad Santuarios de
+                Altura, que busca contribuir a la revaloración del patrimonio
+                material asociado a los Apus Tutelares (cerros y montañas).
+              </p>
+            </div>
 
-          <div className="col-md">
-            <Image
-              src="/logo-mac.png"
-              layout="responsive"
-              width={100}
-              height={100}
-            ></Image>
-            <h3>MAC</h3>
-            {/* TODO: add description to MAC */}
-            <p>Montañismo a los colegios</p>
+            <div className="col-md">
+              <Image
+                src="/logo-mac.png"
+                layout="responsive"
+                width={100}
+                height={100}
+              ></Image>
+              <h3>MAC</h3>
+              {/* TODO: add description to MAC */}
+              <p>Montañismo a los colegios</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <h2>Filosofía</h2>
-      <p>
-        En comunidad (ayllu) a partir de la reciprocidad (ayni) ofrendamos,
-        educamos, limpiamos, reconocemos, valoramos, difundimos y conservamos
-        los Santuarios de Altura.
-      </p>
-
-      <Link href="/mision-vision">
-        <a className="btn btn-primary">Ver más</a>
-      </Link>
+      <div className={styles.Home__Philosophy}>
+        <h2>Filosofía</h2>
+        <p>
+          En comunidad (ayllu) a partir de la reciprocidad (ayni) ofrendamos,
+          educamos, limpiamos, reconocemos, valoramos, difundimos y conservamos
+          los Santuarios de Altura.{' '}
+          <Link href="/acerca-de/mision-vision">Seguir leyendo.</Link>
+        </p>
+      </div>
     </MainLayout>
   );
 }
