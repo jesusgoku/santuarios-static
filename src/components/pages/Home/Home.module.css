@@ -4,6 +4,12 @@
   margin: 100px 0;
 }
 
+.Home__HeaderTitles {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 .Home__HeaderTitle {
   font-size: 4rem;
   word-break: break-word;

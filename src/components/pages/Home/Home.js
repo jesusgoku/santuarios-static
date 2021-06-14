@@ -15,17 +15,24 @@ export default function Home() {
       <Head>
         <title>Santuarios de Altura</title>
         <meta name="description" content="Santuarios de Altura" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.Home__Header}>
-        <h1 className={styles.Home__HeaderTitle}>Santuarios de Altura</h1>
-        <p className={styles.Home__HeaderDescription}>
-          Somos una comunidad sin fines de lucro, conformada por voluntarios.
-          Valoramos y respetamos la diversidad de las personas, combinamos el
-          deporte con el rescate de la cultura andina y el amor a las montañas y
-          la naturaleza.
-        </p>
+        <div className="row">
+          <div className="col-md">
+            <img src="/logo-santuarios-square.png " className="img-fluid" />
+          </div>
+
+          <div className={`col-md ${styles.Home__HeaderTitles}`}>
+            <h1 className={styles.Home__HeaderTitle}>Santuarios de Altura</h1>
+            <p className={styles.Home__HeaderDescription}>
+              Somos una comunidad sin fines de lucro, conformada por
+              voluntarios. Valoramos y respetamos la diversidad de las personas,
+              combinamos el deporte con el rescate de la cultura andina y el
+              amor a las montañas y la naturaleza.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className={styles.Home__Intro}>
