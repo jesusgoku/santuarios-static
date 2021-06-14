@@ -23,24 +23,21 @@ function Header() {
   return (
     <Navbar expand="md" sticky="top" className={styles.Navbar}>
       <Container>
-        {/* <Link href="/" passHref>
-        <Navbar.Brand>Santuarios de Altura</Navbar.Brand>
-      </Link> */}
+        <Link href="/" passHref>
+          <Navbar.Brand>
+            <img
+              src="/logo-santuarios-navbar.png"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            <span class="d-none d-md-inline">Santuarios de Altura</span>
+          </Navbar.Brand>
+        </Link>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto flex-fill justify-content-around text-uppercase">
-            <Link href="/" passHref>
-              <Nav.Link>
-                <FontAwesomeIcon icon="home" /> Inicio
-              </Nav.Link>
-            </Link>
-
-            {/* <Link href="/mision-vision" passHref>
-            <Nav.Link>Acerca De</Nav.Link>
-          </Link> */}
-
             <NavDropdown title={aboutUsTitle} id="basic-nav-dropdown">
               <Link href="/acerca-de/santuarios-altura" passHref>
                 <NavDropdown.Item>Santuarios de Altura</NavDropdown.Item>
