@@ -94,7 +94,11 @@ export default function Home() {
             ></Image>
             <h3>MAC</h3>
             {/* TODO: add description to MAC */}
-            <p>Montañismo a los colegios</p>
+            <p>
+              Montañismo a los Colegios (MAC): que lleva la cultura andina y
+              enseñanza del cuidado de la naturaleza a profesores y niños de
+              colegios, usando como principal herramienta el montañismo.
+            </p>
           </div>
         </div>
       </div>
