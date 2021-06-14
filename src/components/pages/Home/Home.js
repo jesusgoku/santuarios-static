@@ -41,49 +41,47 @@ export default function Home() {
       <div className={styles.Home__Initiatives}>
         <h2 className={styles.Home__InitiativesTitle}>Iniciativas</h2>
 
-        <div className="container">
-          <div className="row">
-            <div className="col-md">
-              <Image
-                src="/logo-caps.png"
-                layout="responsive"
-                width={100}
-                height={100}
-              ></Image>
-              <h3>CAPS</h3>
-              <p>
-                Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es
-                una iniciativa que busca capacitar y promocionar prácticas de
-                conservación.
-              </p>
-            </div>
+        <div className="row">
+          <div className="col-md">
+            <Image
+              src="/logo-caps.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
+            <h3>CAPS</h3>
+            <p>
+              Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
+              iniciativa que busca capacitar y promocionar prácticas de
+              conservación.
+            </p>
+          </div>
 
-            <div className="col-md">
-              <Image
-                src="/logo-apus.png"
-                layout="responsive"
-                width={100}
-                height={100}
-              ></Image>
-              <h3>Apus Tutelares</h3>
-              <p>
-                Apus Tutelares es un Proyecto de la comunidad Santuarios de
-                Altura, que busca contribuir a la revaloración del patrimonio
-                material asociado a los Apus Tutelares (cerros y montañas).
-              </p>
-            </div>
+          <div className="col-md">
+            <Image
+              src="/logo-apus.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
+            <h3>Apus Tutelares</h3>
+            <p>
+              Apus Tutelares es un Proyecto de la comunidad Santuarios de
+              Altura, que busca contribuir a la revaloración del patrimonio
+              material asociado a los Apus Tutelares (cerros y montañas).
+            </p>
+          </div>
 
-            <div className="col-md">
-              <Image
-                src="/logo-mac.png"
-                layout="responsive"
-                width={100}
-                height={100}
-              ></Image>
-              <h3>MAC</h3>
-              {/* TODO: add description to MAC */}
-              <p>Montañismo a los colegios</p>
-            </div>
+          <div className="col-md">
+            <Image
+              src="/logo-mac.png"
+              layout="responsive"
+              width={100}
+              height={100}
+            ></Image>
+            <h3>MAC</h3>
+            {/* TODO: add description to MAC */}
+            <p>Montañismo a los colegios</p>
           </div>
         </div>
       </div>
