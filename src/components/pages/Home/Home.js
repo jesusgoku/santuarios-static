@@ -60,7 +60,10 @@ export default function Home() {
             <p>
               Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
               iniciativa que busca capacitar y promocionar prácticas de
-              conservación.
+              conservación.{' '}
+            </p>
+            <p>
+              <Link href="/iniciativas/caps/que-es">Saber más.</Link>
             </p>
           </div>
 
@@ -75,7 +78,10 @@ export default function Home() {
             <p>
               Apus Tutelares es un Proyecto de la comunidad Santuarios de
               Altura, que busca contribuir a la revaloración del patrimonio
-              material asociado a los Apus Tutelares (cerros y montañas).
+              material asociado a los Apus Tutelares (cerros y montañas).{' '}
+            </p>
+            <p>
+              <Link href="/iniciativas/apus/que-es">Saber más.</Link>
             </p>
           </div>
 
@@ -99,7 +105,9 @@ export default function Home() {
           En comunidad (ayllu) a partir de la reciprocidad (ayni) ofrendamos,
           educamos, limpiamos, reconocemos, valoramos, difundimos y conservamos
           los Santuarios de Altura.{' '}
-          <Link href="/acerca-de/mision-vision">Seguir leyendo.</Link>
+        </p>
+        <p>
+          <Link href="/acerca-de/mision-vision">Sabes más.</Link>
         </p>
       </div>
     </MainLayout>
