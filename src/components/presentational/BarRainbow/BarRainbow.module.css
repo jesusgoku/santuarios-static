@@ -1,0 +1,38 @@
+.BarRainbow {
+  width: 100%;
+  height: 15px;
+  display: flex;
+}
+
+.BarRainbow > div {
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.BarRainbow > div:nth-child(1) {
+  background-color: #ffffff;
+}
+
+.BarRainbow > div:nth-child(2) {
+  background-color: #f4e831;
+}
+
+.BarRainbow > div:nth-child(3) {
+  background-color: #f6ad43;
+}
+
+.BarRainbow > div:nth-child(4) {
+  background-color: #e2242d;
+}
+
+.BarRainbow > div:nth-child(5) {
+  background-color: #623288;
+}
+
+.BarRainbow > div:nth-child(6) {
+  background-color: #1575bb;
+}
+
+.BarRainbow > div:nth-child(7) {
+  background-color: #149344;
+}
