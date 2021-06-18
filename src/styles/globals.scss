@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Bank Gothic';
+  src: local('BankGothic'),
+    url('/fonts/bank_gothic_medium-webfont.woff2') format('woff2'),
+    url('/fonts/bank_gothic_medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+$headings-font-family: 'Bank Gothic', serif;
+
 @import 'bootstrap/scss/bootstrap';
 @import '@fortawesome/fontawesome-svg-core/styles.css';
 
