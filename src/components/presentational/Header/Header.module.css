@@ -1,4 +1,11 @@
 .Navbar {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   margin-bottom: 20px;
+  font-family: 'Bank Gothic', serif;
+}
+
+@media (max-width: 420px) {
+  .Header__NavbarBrandTitle {
+    font-size: 0.95rem;
+  }
 }

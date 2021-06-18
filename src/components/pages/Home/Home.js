@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Header from '@app/components/presentational/Header';
 import Footer from '@app/components/presentational/Footer';
 import MainLayout from '@app/components/layouts/Main';
+import BarRainbow from '@app/components/presentational/BarRainbow';
 
 import styles from './Home.module.css';
 
@@ -36,7 +37,9 @@ export default function Home() {
       </div>
 
       <div className={styles.Home__Intro}>
-        <h2>Bienvenidos a Santuarios de Altura</h2>
+        <h2 className={styles.Home__IntroTitle}>
+          Bienvenidos a Santuarios de Altura
+        </h2>
         <p>
           Nuestros caminar es construir comunidad con el marco de la filosofía
           andina, a partir de la generación de un despertar de la conciencia que
@@ -44,6 +47,8 @@ export default function Home() {
           herramientas cada una de las iniciativas.
         </p>
       </div>
+
+      <BarRainbow />
 
       <div className={styles.Home__Initiatives}>
         <h2 className={styles.Home__InitiativesTitle}>Iniciativas</h2>
@@ -56,7 +61,7 @@ export default function Home() {
               width={100}
               height={100}
             ></Image>
-            <h3>CAPS</h3>
+            <h3 className={styles.Home__InitiativeTitle}>CAPS</h3>
             <p>
               Camino al Protector de Santiago (CAPS): Limpieza del Plomo, es una
               iniciativa que busca capacitar y promocionar prácticas de
@@ -74,7 +79,7 @@ export default function Home() {
               width={100}
               height={100}
             ></Image>
-            <h3>Apus Tutelares</h3>
+            <h3 className={styles.Home__InitiativeTitle}>Apus Tutelares</h3>
             <p>
               Apus Tutelares es un Proyecto de la comunidad Santuarios de
               Altura, que busca contribuir a la revaloración del patrimonio
@@ -92,8 +97,7 @@ export default function Home() {
               width={100}
               height={100}
             ></Image>
-            <h3>MAC</h3>
-            {/* TODO: add description to MAC */}
+            <h3 className={styles.Home__InitiativeTitle}>MAC</h3>
             <p>
               Montañismo a los Colegios (MAC): que lleva la cultura andina y
               enseñanza del cuidado de la naturaleza a profesores y niños de
@@ -104,7 +108,7 @@ export default function Home() {
       </div>
 
       <div className={styles.Home__Philosophy}>
-        <h2>Filosofía</h2>
+        <h2 className={styles.Home__PhilosophyTitle}>Filosofía</h2>
         <p>
           En comunidad (ayllu) a partir de la reciprocidad (ayni) ofrendamos,
           educamos, limpiamos, reconocemos, valoramos, difundimos y conservamos

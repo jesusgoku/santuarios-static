@@ -1,6 +1,5 @@
 .Home__Header {
   text-align: center;
-  font-family: serif;
   margin: 100px 0;
 }
 
@@ -11,16 +10,21 @@
 }
 
 .Home__HeaderTitle {
-  font-size: 4rem;
+  font-size: 2.6rem;
   word-break: break-word;
+  text-transform: uppercase;
 }
 
 .Home__HeaderDescription {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .Home__Intro {
   margin: 50px 0;
+}
+
+.Home__IntroTitle {
+  text-transform: uppercase;
 }
 
 .Home__Initiatives {
@@ -29,8 +33,17 @@
 
 .Home__InitiativesTitle {
   text-align: center;
+  text-transform: uppercase;
+}
+
+.Home__InitiativeTitle {
+  text-transform: uppercase;
 }
 
 .Home__Philosophy {
   margin: 50px 0;
+}
+
+.Home__PhilosophyTitle {
+  text-transform: uppercase;
 }

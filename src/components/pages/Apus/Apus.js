@@ -63,11 +63,13 @@ function Apus() {
           Preparar y editar Libro: “Apus Tutelares de Chile” que recopilará el
           registro y documentación de los Apus Tutelares Andinos.
         </li>
-        {/* TODO: Remove this point or planing add this content in this page */}
         <li>
-          Desarrollar página web: www.apustutelares.cl con el fin de difundir
-          los trabajos en desarrollo y resultados de las investigaciones de los
-          distintos Apus Tutelares.
+          Desarrollar página web:{' '}
+          <a href="https://apustutelares.com/" target="_blank">
+            https://apustutelares.com/
+          </a>{' '}
+          con el fin de difundir los trabajos en desarrollo y resultados de las
+          investigaciones de los distintos Apus Tutelares.
         </li>
         <li>
           Aprender y aprehender a hacer comunidad y practicar la reciprocidad

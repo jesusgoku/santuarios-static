@@ -21,7 +21,7 @@ function Header() {
   );
 
   return (
-    <Navbar expand="md" sticky="top" className={styles.Navbar}>
+    <Navbar variant="dark" expand="lg" sticky="top" className={styles.Navbar}>
       <Container>
         <Link href="/" passHref>
           <Navbar.Brand>
@@ -30,7 +30,9 @@ function Header() {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            <span class="d-none d-md-inline">Santuarios de Altura</span>
+            <span className={styles.Header__NavbarBrandTitle}>
+              Santuarios de Altura
+            </span>
           </Navbar.Brand>
         </Link>
 
