@@ -67,6 +67,9 @@ function Header() {
               <Link href="/iniciativas/caps/preguntas-frecuentes" passHref>
                 <NavDropdown.Item>Preguntas Frecuentes</NavDropdown.Item>
               </Link>
+              <NavDropdown.Item href="https://www.santuariosdealtura.cl/views/account/myaccount">
+                Portal CAPS
+              </NavDropdown.Item>
 
               <NavDropdown.Divider></NavDropdown.Divider>
 
