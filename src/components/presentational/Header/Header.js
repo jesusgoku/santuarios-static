@@ -29,6 +29,7 @@ function Header() {
               src="/logo-santuarios-navbar.png"
               height="30"
               className="d-inline-block align-top"
+              alt="Logo: Santuarios de Altura"
             />{' '}
             <span className={styles.Header__NavbarBrandTitle}>
               Santuarios de Altura

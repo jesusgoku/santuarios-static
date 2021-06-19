@@ -65,7 +65,7 @@ function Apus() {
         </li>
         <li>
           Desarrollar página web:{' '}
-          <a href="https://apustutelares.com/" target="_blank">
+          <a href="https://apustutelares.com/" target="_blank" rel="noopener">
             https://apustutelares.com/
           </a>{' '}
           con el fin de difundir los trabajos en desarrollo y resultados de las

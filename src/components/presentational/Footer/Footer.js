@@ -48,6 +48,7 @@ function Footer() {
             <a
               href="https://www.instagram.com/caps_limpieza_de_el_plomo/"
               target="_blank"
+              rel="noopener"
               title="Instagram"
             >
               <FontAwesomeIcon icon={['fab', 'instagram']} size="3x" />{' '}
@@ -59,6 +60,7 @@ function Footer() {
             <a
               href="https://www.facebook.com/Santuarios-de-Altura-344307135954852/"
               target="_blank"
+              rel="noopener"
               title="Facebook"
             >
               <FontAwesomeIcon icon={['fab', 'facebook']} size="3x" />{' '}
@@ -70,6 +72,7 @@ function Footer() {
             <a
               href="https://www.youtube.com/user/santuariosdealtura/"
               target="_blank"
+              rel="noopener"
               title="Youtube"
             >
               <FontAwesomeIcon icon={['fab', 'youtube']} size="3x" />{' '}

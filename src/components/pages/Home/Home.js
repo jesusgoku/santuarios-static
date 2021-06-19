@@ -21,7 +21,11 @@ export default function Home() {
       <div className={styles.Home__Header}>
         <div className="row">
           <div className="col-md">
-            <img src="/logo-santuarios-square.png " className="img-fluid" />
+            <img
+              src="/logo-santuarios-square.png "
+              className="img-fluid"
+              alt="Logo: Santuarios de Altura"
+            />
           </div>
 
           <div className={`col-md ${styles.Home__HeaderTitles}`}>
@@ -60,6 +64,7 @@ export default function Home() {
               layout="responsive"
               width={100}
               height={100}
+              alt="Logo: CAPS"
             ></Image>
             <h3 className={styles.Home__InitiativeTitle}>CAPS</h3>
             <p>
@@ -78,6 +83,7 @@ export default function Home() {
               layout="responsive"
               width={100}
               height={100}
+              alt="Logo: APUS"
             ></Image>
             <h3 className={styles.Home__InitiativeTitle}>Apus Tutelares</h3>
             <p>
@@ -96,6 +102,7 @@ export default function Home() {
               layout="responsive"
               width={100}
               height={100}
+              alt="Logo: MAC"
             ></Image>
             <h3 className={styles.Home__InitiativeTitle}>MAC</h3>
             <p>
