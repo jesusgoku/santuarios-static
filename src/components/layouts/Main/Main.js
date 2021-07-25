@@ -6,11 +6,30 @@ import Header from '@app/components/presentational/Header';
 import styles from './Main.module.css';
 
 function MainLayout({ children }) {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <>
       <Head>
         <title>Santuarios de Altura</title>
         <meta name="description" content="Santuarios de Altura" />
+
+        <meta property="og:title" content="Santuarios de Altura" />
+        <meta property="og:description" content="Somos una comunidad sin fines de lucro, conformada por
+              voluntarios. Valoramos y respetamos la diversidad de las personas,
+              combinamos el deporte con el rescate de la cultura andina y el
+              amor a las montañas y la naturaleza." />
+        <meta property="og:image" content={`${baseUrl}/santuarios-social.jpg`} />
+        <meta property="og:url" content={`${baseUrl}`} />
+
+        <meta name="twitter:title" content="Santuarios de Altura" />
+        <meta name="twitter:description" content="Somos una comunidad sin fines de lucro, conformada por
+              voluntarios. Valoramos y respetamos la diversidad de las personas,
+              combinamos el deporte con el rescate de la cultura andina y el
+              amor a las montañas y la naturaleza." />
+        <meta name="twitter:image" content={`${baseUrl}/santuarios-social.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
