@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faEnvelope,
@@ -43,7 +45,13 @@ library.add(
 );
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const [queryClient] = useState(() => new QueryClient());
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+    </QueryClientProvider>
+  );
 }
 
 export default MyApp;
