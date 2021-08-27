@@ -8,7 +8,11 @@ import Card from 'react-bootstrap/Card';
 import MainLayout from '@app/components/layouts/Main';
 
 function News() {
-  const { isLoading, error, data } = useQuery('fetchNews', () => fetch('https://caps.santuariosdealtura.cl/api/news.php?resume').then((res) => res.json()));
+  const { isLoading, error, data } = useQuery('fetchNews', () =>
+    fetch('https://caps.santuariosdealtura.cl/api/v2/news').then((res) =>
+      res.json()
+    )
+  );
 
   let processes = data?.data?.reduce((acc, item) => {
     const d = new Date(item.createdAt);
@@ -22,8 +26,7 @@ function News() {
     return acc;
   }, {});
 
-  processes = Object
-    .entries(processes || {})
+  processes = Object.entries(processes || {})
     .map(([key, data]) => {
       const year = parseInt(key, 10);
       const label = `Proceso ${year}-${year + 1}`;
@@ -38,17 +41,15 @@ function News() {
 
   return (
     <MainLayout>
-    <Head>
-      <title>Noticias - Santuarios de Altura</title>
-    </Head>
+      <Head>
+        <title>Noticias - Santuarios de Altura</title>
+      </Head>
 
       <h2>Noticias</h2>
 
-      {isLoading && (<p>Cargando ...</p>)}
+      {isLoading && <p>Cargando ...</p>}
 
-      {error && (<p>Error intentando cargar las noticias</p>)}
-
-
+      {error && <p>Error intentando cargar las noticias</p>}
 
       {processes && (
         <Accordion defaultActiveKey="0">
@@ -59,26 +60,24 @@ function News() {
               </Accordion.Toggle>
               <Accordion.Collapse eventKey={`${index}`}>
                 <Card.Body>
-
                   {data && (
                     <ListGroup variant="flush">
                       {data.map((item) => (
                         <Link
                           href={`/iniciativas/caps/noticias/${item.id}`}
-                          passHref>
+                          passHref
+                        >
                           <ListGroup.Item action>{item.title}</ListGroup.Item>
                         </Link>
                       ))}
                     </ListGroup>
                   )}
-
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
           ))}
         </Accordion>
       )}
-
     </MainLayout>
   );
 }
