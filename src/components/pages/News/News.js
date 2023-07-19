@@ -49,7 +49,7 @@ function News() {
 
       {isLoading && <p>Cargando ...</p>}
 
-      {error && <p>Error intentando cargar las noticias</p>}
+      {error && <p>Error intentando cargar las noticias caps</p>}
 
       {processes && (
         <Accordion defaultActiveKey="0">
