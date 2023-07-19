@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install --frozen-lockfile
-      - run: yarn run build
-      - run: yarn run format:check
+      - name: Install dependecies
+        run: yarn install --frozen-lockfile
+
+      - name: Validate code compliance with Prettier format
+        run: yarn run format:check
